@@ -1,5 +1,5 @@
 function prelaod(){
-
+nosey = loadImage("https://i.postimg.cc/BQZ8gbw5/clown-nosey-removebg-preview.png")
 }
 noseX=0
 noseY=0
@@ -28,9 +28,8 @@ function modelLoaded(){
 }
 function draw(){
    image(video , 0 , 0 , 300 , 300)
-   stroke(255 , 0 , 0)
-   fill(255 , 0 , 0)
-   circle(noseX , noseY , 25)
+  
+    image(nosey , noseX , noseY , 70 , 70)
 }
 function take_snapshot(){
     save("MyFilterImage.png")
