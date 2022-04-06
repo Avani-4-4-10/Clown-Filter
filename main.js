@@ -1,5 +1,5 @@
 nosey=""
-function prelaod(){
+function preload(){
 nosey = loadImage("https://i.postimg.cc/BQZ8gbw5/clown-nosey-removebg-preview.png")
 }
 
@@ -20,8 +20,8 @@ function gotPoses(results){
     if (results.length > 0){
         console.log(results)
         
-        noseX=results[0].pose.nose.x;
-        noseY=results[0].pose.nose.y;
+        noseX=results[0].pose.nose.x-55;
+        noseY=results[0].pose.nose.y-55;
         console.log(noseX , noseY)
     
     }
@@ -32,7 +32,7 @@ function modelLoaded(){
 function draw(){
    image(video , 0 , 0 , 300 , 300)
   
-    image(nosey , noseX , noseY , 70 , 70)
+    image(nosey , noseX , noseY , 110 , 90)
 }
 function take_snapshot(){
     save("MyFilterImage.png")
