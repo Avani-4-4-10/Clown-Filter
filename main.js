@@ -1,6 +1,9 @@
+nosey=""
 function prelaod(){
 nosey = loadImage("https://i.postimg.cc/BQZ8gbw5/clown-nosey-removebg-preview.png")
 }
+
+
 noseX=0
 noseY=0
 
